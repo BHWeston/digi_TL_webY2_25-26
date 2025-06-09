@@ -6,14 +6,20 @@
     <title>Form Page</title>
 </head>
 <body>
+    <!-- Title for the project -->
     <h1>Guestbook Project</h1>
+
+    <!-- Form to be sent to the PHP file, this is using a method of POST -->
     <form action="display.php" method="post">
+        <!-- Input and label for the name: -->
         <label for="sName">Name: </label><br/>
         <input type="text" name="sName" id="sName"><br/><br/>
 
+        <!-- Input and label for the message: -->
         <label for="sMessage">Message: </label><br/>
         <textarea name="sMessage" id="sMessage" cols="30" rows="10"></textarea><br/><br/>
 
+        <!-- Submitting the form: -->
         <button type="submit">Submit Form</button>
     </form>
 </body>
