@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Form Validation</h1>
+    <form action="#">
+        <label for="sFirstname">Firstname:</label>
+        <input type="text" name="sFirstname" id="sFirstname" minlength="2" maxlength="30" placeholder="Enter in your firstname"><br/>
+
+        <label for="iAge">Age:</label> 
+        <input type="number" name="iAge" id="iAge" min="1" max="130" required placeholder="Enter in your age"><br/>
+
+        <label for="sEmail">Email:</label>
+        Email: <input type="email" name="sEmail" id="sEmail" required placeholder="Enter in your email"><br/>
+        
+        <label for="sDate">Date of Booking:</label>
+        <input type="date" name="sDate" id="sDate" required><br/>
+
+        <!-- The username field only allows for 6 - 12 letters or numbers -->
+        <label for="sUsername">Username:</label>
+        <input type="text" name="sUsername" id="sUsername" pattern="[A-Za-z0-9]{6,12}" title="Username must be three letters in size">
+        <button type="submit">Submit Form</button>
+    </form>
+
+</body>
+</html>
